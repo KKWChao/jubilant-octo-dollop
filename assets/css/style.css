@@ -35,7 +35,11 @@ header h1 {
   border: 1px solid var(--tertiary-color);
   margin-left: 1em;
   transition: all 1s ease-in-out;
+}
 
+header h1 a {
+  text-decoration: none;
+  color: var(--tertiary-color)
 }
 
 /* NAV STYLE START */
@@ -66,16 +70,16 @@ header h1:hover {
   background-color: var(--back-color);
   color: var(--text-color);
   border-radius: 10px;
-  text-shadow: 0 0 20px var(--tertiary-color);
+  text-shadow: 0 0 50px var(--tertiary-color);
   rotate: 720deg;
 }
 #menu ul li a:hover {
   padding: 1em;
   background-color: var(--secondary-color);
   color: var(--text-color);
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px black inset;
 }
-
 
 /* SECTION START */
 
@@ -98,6 +102,7 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: var(--text-color);
 }
 
 
@@ -105,44 +110,74 @@ section {
 
 #portfolio {
   margin: 0 auto;
-
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 #portfolio h2 {
   padding-bottom: 2em;
-}
-
-#portfolio article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  width: 100%;
 }
 
 .projects {
-  padding: 2em;
-  border: 1px solid var(--primary-color);
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
+  padding: 1em;
+  border: 1px solid var(--primary-color);
   margin: 1em;
-  width: 400px;
   border-radius: 2em;
-  box-shadow: 0 0 10px var(--primary-color);
+  box-shadow: 0 0 40px inset;
   background-color: var(--tertiary-color);
-  opacity: 0.8;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
   align-items: center;
-}
+  min-width: 400px;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
 
-.projects img {
-  width: 300px;
-  height: auto;
-  box-shadow: 0 0 10px inset;
-  border-radius: 10px;
 }
 
 .projects h3 {
-  padding: 10px;
-  border-bottom: 2px solid black;
+  opacity: 1;
+  padding: 5px;
+  background: var(--back-color);
+  color: var(--text-color);
+  border: 10px solid var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color);
+  border-radius: 1em;
+}
+
+#rps {
+  flex: 2 0 80%;
+  background-image: url("../images/appPhotos/RPScenter.png");
+}
+
+#etch {
+  background-image: url("../images/appPhotos/etch-a-sketch.png");
+}
+
+#run {
+  background-image: url("../images/appPhotos/runbuddy.png");
+  background-position: top;
+}
+
+/* DIV HOVER EFFECT START */
+
+#rps:hover,
+#etch:hover,
+#run:hover {
+  background-blend-mode: normal;
 }
 
 /* ABOUT SECTION START */
@@ -157,10 +192,9 @@ footer {
   width: 100%;
   background-color: var(--primary-color);
   color: var(--text-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   bottom: 0;
   padding: 2em;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
