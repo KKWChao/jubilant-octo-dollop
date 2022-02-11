@@ -33,6 +33,7 @@ header h1 {
   font-weight: bold;
   padding: 10px;
   border: 1px solid var(--tertiary-color);
+  border-radius: 0.1em;
   margin-left: 1em;
   transition: all 1s ease-in-out;
 }
@@ -60,7 +61,7 @@ ul li a {
 #menu ul li a {
   color: var(--text-color);
   padding: 1em;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   box-shadow: 0 0 100px var(--primary-color) inset;
 }
 
@@ -70,7 +71,7 @@ ul li a {
 header h1:hover {
   background-color: var(--back-color);
   color: var(--text-color);
-  border-radius: 10px;
+  border-radius: 5px;
   rotate: 720deg;
   box-shadow: 0 0 30px var(--primary-color) inset;
 }
@@ -89,6 +90,10 @@ section {
   width: 100%;
   padding: 2em;
   height: auto;
+}
+
+h2 {
+  padding-bottom: 1em;
 }
 
 /* WELCOME START */
@@ -110,6 +115,11 @@ section {
 }
 
 /* ABOUT SECTION START */
+#about {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
 
 #container {
   padding: 2em;
@@ -117,8 +127,8 @@ section {
 }
 
 #container img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 200px;
   box-shadow: 0 0 10px var(--primary-color);
 }
 
@@ -134,15 +144,15 @@ section {
 /* PORTFOLIO SECTION START */
 
 #portfolio {
-  margin: 0 auto;
+  margin: 0;
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-image: linear-gradient(var(--text-color), var(--primary-color));
 }
 
 #portfolio h2 {
-  padding-bottom: 2em;
   width: 100%;
 }
 
@@ -151,10 +161,9 @@ section {
   flex-flow: column;
   flex-wrap: wrap;
   padding: 1em;
-  border: 1px solid var(--primary-color);
   margin: 1em;
-  border-radius: 2em;
-  box-shadow: 0 0 100px inset;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px var(--primary-color);
   cursor: pointer;
   flex: 1;
   justify-content: center;
@@ -175,8 +184,8 @@ section {
   padding: 20px;
   background: var(--back-color);
   color: var(--text-color);
-  box-shadow: 0 0 20px var(--primary-color);
-  border-radius: 1em;
+  box-shadow: 0 0 5px var(--primary-color);
+  border-radius: 0.2em;
 }
 
 .projects p {
@@ -184,7 +193,7 @@ section {
   padding: 0.75em;
   background: var(--primary-color);
   color: var(--text-color);
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   transition: all 1s ease-in-out;
 }
 
@@ -218,6 +227,22 @@ section {
 
 /* CONTACT SECTION START */
 
+#contact {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-flow: column;
+  min-height: 200px;
+}
+
+
+#contact div ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2em;
+}
+
 
 
 /* FOOTER START */
@@ -225,7 +250,7 @@ section {
 footer {
   height: 50px;
   width: 100%;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(var(--primary-color), var(--secondary-color));
   color: var(--text-color);
   bottom: 0;
   padding: 2em;
