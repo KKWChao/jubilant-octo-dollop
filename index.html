@@ -15,8 +15,8 @@
     <h1><a href="#welcome">KC</a></h1>
     <nav id="menu">
       <ul>
-        <li><a href="#portfolio">Projects</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
 
   <section id="about">
     <div>
-      <h3>About Me</h3>
+      <h2>About Me</h2>
       <div id="container">
         <img src="./assets/images/appPhotos/placeholder.png" alt="Me">
         <p>
@@ -42,7 +42,7 @@
         </p>
       </div>
 
-      <div>
+      <div id="hobbies">
         <h4>Hobbies</h4>
         <div id="hobbyContainer">
 
@@ -56,17 +56,17 @@
   <section id="portfolio">
     <h2>My Portfolio</h2>
 
-    <article class="projects" id="rps" > <!-- use js to open new link -->
+    <article class="projects" id="rps" onclick="window.open('https://kkwchao.github.io/RockPaperScissors/','_blank');"> <!-- use js to open new link -->
       <h3>Rock Paper Scissors</h3>
       <!-- <img src="./assets/images/appPhotos/RPS.png" alt="rockpaperscissors" /> -->
     </article>
 
-    <article class="projects" id="etch">
+    <article class="projects" id="etch" onclick="window.open('https://kkwchao.github.io/Etch-a-Sketch/','_blank');">
       <h3>Etch - A - Sketch</h3>
       <!-- <img src="./assets/images/appPhotos/etch-a-sketch.png" alt="etch-a-sketch" /> -->
     </article>
 
-    <article class="projects" id="run" href="">
+    <article class="projects" id="run" onclick="window.open('https://kkwchao.github.io/run-buddy/','_blank');">
       <h3>Run Buddy</h3>
       <!-- <img src="./assets/images/appPhotos/runbuddy.png" alt="runbuddy" /> -->
     </article>
@@ -79,7 +79,7 @@
 
   <section id="contact">
     <div>
-      <h3>Contact Me</h3>
+      <h2>Contact Me</h2>
       <div>
         <ul>
           <li><a href="">Github</a></li>

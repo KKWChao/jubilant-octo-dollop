@@ -74,6 +74,7 @@ header h1:hover {
   rotate: 720deg;
   box-shadow: 0 0 30px var(--primary-color) inset;
 }
+
 #menu ul li a:hover {
   padding: 1em;
   background-color: var(--secondary-color);
@@ -98,12 +99,14 @@ section {
   align-items: center;
   justify-content: center;
   height: 1000px;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 30px;
   background-image: url("../images/background/forrest.jpg");  /* Photo by Ali Kazal from Pexels */ 
   background-color: var(--tertiary-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--text-color);
 }
 
 /* ABOUT SECTION START */
@@ -116,7 +119,16 @@ section {
 #container img {
   width: 200px;
   height: auto;
-  padding-right: 1em;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+#container p {
+  padding-left: 2em;
+}
+
+#hobbies {
+  display: flex;
+  justify-content: center;
 }
 
 /* PORTFOLIO SECTION START */
@@ -190,8 +202,6 @@ section {
   background-color: transparent;
   box-shadow: 0 0 20px inset;
 }
-
-
 
 /* CONTACT SECTION START */
 
