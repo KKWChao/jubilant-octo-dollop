@@ -19,4 +19,5 @@ Link: https://github.com/KKWChao/jubilant-octo-dollop/deployments/activity_log?e
 * [icons] https://www.flaticon.com
 * [background] https://www.pexels.com/@ali-kazal-133607070 
 
-![Alt Text](https://giphy.com/gifs/earth-mindblown-kepler-Um3ljJl8jrnHy)
+![Alt Text](https://media.giphy.com/media/Um3ljJl8jrnHy/giphy.gif)
+
