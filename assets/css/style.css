@@ -227,10 +227,12 @@ h2 {
 }
 
 #etch {
+  flex: 1 0 40%;
   background-image: url("../images/appPhotos/etch-a-sketch.png");
 }
 
 #run {
+  flex: 1 0 40%;
   background-image: url("../images/appPhotos/runbuddy.png");
   background-position: top;
 }
